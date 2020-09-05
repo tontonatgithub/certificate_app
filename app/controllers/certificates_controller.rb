@@ -4,7 +4,6 @@ class CertificatesController < ApplicationController
   end
 
   def new
-    @certificate = Certificate.new
   end
 
   def create
