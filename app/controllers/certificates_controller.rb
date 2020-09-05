@@ -1,9 +1,10 @@
 class CertificatesController < ApplicationController
   def index
-    @certificates = Certificate.all
+    # @certificates = Certificate.all
   end
 
   def new
+    @certificate = Certificate.new
   end
 
   def create
