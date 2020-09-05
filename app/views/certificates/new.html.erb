@@ -1,0 +1,40 @@
+<main>
+  <div class="form">
+    
+    <div class="smp-title">仕上がりサンプル</div>
+    <div class="sample">
+      <%= image_tag("sample_1.png", class: "sample-img") %>
+      <%= image_tag("sample_2.png", class: "sample-img") %>
+    </div>
+    
+    <div class="form-title">入力フォーム</div>
+    <%= form_with(model: @certificate, local: true) do |f| %>
+      
+      <%= render 'shared/error_messages' %>
+      
+      <div class="radio">
+        <%= f.radio_button :style, 1, checked: true %>
+        <%= f.label :style, "表彰状" %>
+        <%= f.radio_button :style, 2 %>
+        <%= f.label :style, "感謝状" %>
+      </div>
+      
+      <div class="text">
+        <%= f.label :your_name, "相手の名前:" %><br>
+        <%= f.text_field :your_name, placeholder: "殿や様をつけると賞状ぽくなるよ！" %><br>
+        
+        <%= f.label :my_name, "あなたの名前:" %><br>
+        <%= f.text_field :my_name, placeholder: "ニックネームでも面白いかも！" %><br>
+        
+        <%= f.label :content, "表彰文:" %><br>
+        <%= f.text_area :content, class: "textarea", rows: "8", placeholder: "思いを伝えるべし! (＊135字以内！)" %><br>
+      </div>
+      
+      <div class="button">
+        <%= f.submit "作成", class: "btn" %>
+      </div>
+      
+    <% end %>
+  </div>
+  
+</main>

@@ -1,0 +1,266 @@
+// Place all the styles related to the Certificates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* all */
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+.navbar {
+  width: 100%;
+  background-color: rgb(248, 247, 251);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px 10px 0px;
+  border-bottom:2px solid rgb(204, 208, 206);
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.make {
+  margin-top: 10px;
+}
+
+.make-link{
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgb(246, 192, 53);
+}
+
+/* main */
+
+main {
+  width: 55%;
+  margin: 0 auto;
+  background-color: rgb(255, 253, 83);
+  padding-bottom: 50px;
+  padding-top: 3em;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: -3em;
+  margin-right: 3em;
+}
+
+.logo-img {
+    width: 60%;
+    height: 380px;
+}
+
+.catch {
+  width: 70%;
+  margin: 0 auto 50px auto;
+  padding: 20px 50px;
+  border: 2px solid white;
+}
+
+.catch h2 {
+  color: orange;
+  margin-bottom: 5%;
+}
+
+.catch p {
+  font-size: 17px;
+}
+
+.how h3 {
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.detail {
+  border: 2px solid white;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.step img {
+  margin-bottom: 20px;
+}
+
+.step h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.step h6 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.step p {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 5em;
+  margin-bottom: 20px;
+}
+
+.job-image {
+    width: 80%;
+    height: 250px;
+}
+
+// form
+
+.smp-title, .form-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 1em;
+}
+
+.sample {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.sample-img {
+  width: 250px;
+  height: 350;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 88px;
+}
+
+.radio {
+  margin-bottom: 1.5em;
+}
+
+.text input[type="text"] {
+  width: 100%;
+  height: 20px;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.textarea {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px
+}
+
+// error message
+.error {
+  color: red;
+}
+
+.error ul {
+  color: red;
+  margin-bottom: 2em;
+}
+
+// show.html
+.complete {
+  margin-top: 88px;
+}
+
+// 賞状画像
+.certificate {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.cer-pic {
+  width: 500px;
+  height: 700px;
+}
+
+.share-button {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  padding-top: 5px;
+}
+
+
+footer {
+  padding: 1em 0;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.dev {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid blue;
+}
+
+//レスポンシブデザイン
+
+//1024px
+@media screen and (max-width: 1024px) {
+  main {
+    width: 80%;
+  }
+}
+
+//768px
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  
+  .catch p {
+    font-size: 15px;
+  }
+  
+  .step p {
+    text-align: left;
+  }
+  
+  .cer-pic {
+    width: 400px;
+    height: 560px;
+  }
+  
+  .sample-img {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+//480px
+@media screen and (max-width: 480px) {
+  .detail {
+    width: 80%;
+  }
+  
+  .cer-pic {
+    width: 350px;
+    height: 490px;
+  }
+  
+  .sample-img {
+    width: 170px;
+    height: 238px;
+  }
+}

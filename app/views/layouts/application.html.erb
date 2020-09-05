@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CertificateApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <li class="nav-item home">
+          <%= link_to image_tag("home.png", class: "home-image", size: '50x50'), root_path %>
+        </li>
+        <li class="nav-item make">
+          <%= link_to "表彰状作成", new_certificate_path, class: "make-link" %>
+        </li>
+      </nav>
+    </header>
+    <%= yield %>
+    <footer>
+        <%= link_to "開発者のTwitter", "https://twitter.com/kaiou_fight", class: "dev" %>
+    </footer>
+    
+  </body>
+    
+</html>
