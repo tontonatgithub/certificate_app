@@ -5,7 +5,7 @@ class ImageHelper
   #content
   BASE_IMAGE_PATH = './app/assets/images/back.png'.freeze
   GRAVITY = 'West'.freeze
-  TEXT_POSITION = '125,0'.freeze
+  TEXT_POSITION = '122,0'.freeze
   FONT = './app/assets/fonts/ipaexm.ttf'.freeze
   FONT_SIZE = 28
   INDENTION_COUNT = 17
