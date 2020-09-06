@@ -8,7 +8,7 @@ class ImageHelper
   TEXT_POSITION = '125,0'.freeze
   FONT = './app/assets/fonts/ipaexm.ttf'.freeze
   FONT_SIZE = 28
-  INDENTION_COUNT = 15
+  INDENTION_COUNT = 17
   ROW_LIMIT = 8
   
   #your_name
