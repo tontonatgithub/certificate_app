@@ -250,6 +250,10 @@ footer {
 
 //480px
 @media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+  
   .detail {
     width: 80%;
   }
