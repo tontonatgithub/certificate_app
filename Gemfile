@@ -8,6 +8,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'rails-i18n'
 gem "mini_magick"
 gem 'aws-sdk-s3', '1.46.0', require: false
+gem 'meta-tags'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
